@@ -8,14 +8,11 @@ class SplashScene : public cocos2d::Scene
 public:
     static cocos2d::Scene* createScene();
 
-    virtual bool init();
-    
-    // a selector callback
-    void menuCloseCallback(cocos2d::Ref* pSender);
-    void updateTimer(float dt);
-    
-    // implement the "static create()" method manually
     CREATE_FUNC(SplashScene);
+    virtual bool init();
+
+    void updateTimer(float dt);
+
 };
 
 #endif
